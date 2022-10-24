@@ -1,6 +1,5 @@
 /*
-* This file contains the characteristics
-* of a Vehicle to be added to Main.java.
+* This file contains fields and methods to be applied to a Vehicle.
 *
 * @author  Aidan Lalonde-Novales
 * @version 1.0
@@ -15,7 +14,7 @@ public class Vehicle {
     /**
      * Declare vehicle speed.
      */
-    private int speed = 0;
+    private int speed;
 
     /**
      * Declare the license plate number.
@@ -38,7 +37,7 @@ public class Vehicle {
     private int maxSpeed;
 
     /**
-     * Vehicle Contructor - allows main to implement values for variables
+     * Vehicle Constructor - allows main to implement values for variables.
      *
      * @param licensePlate - license plate number
      * @param color - color of the car
@@ -57,7 +56,7 @@ public class Vehicle {
     }
 
     /**
-     * status() method - prints all current values
+     * Status() method - prints all current values.
      */
     public void status() {
         System.out.println("");
@@ -70,7 +69,7 @@ public class Vehicle {
     }
 
     /**
-     * getLicensePlate() method - returns the current licensePlate value
+     * GetLicensePlate() method - returns the current licensePlate value.
      *
      * @return licensePlate
      */
@@ -79,16 +78,16 @@ public class Vehicle {
     }
 
     /**
-     * setLicensePlate() method - changes the license plate value
+     * SetLicensePlate() method - changes the license plate value.
      *
      * @param licensePlateInput - input from Main to replace licensePlate
      */
     public void setLicensePlate(String licensePlateInput) {
-         this.licensePlate = licensePlateInput;
+        this.licensePlate = licensePlateInput;
     }
 
     /**
-     * getColor() method - returns the current color value
+     * GetColor() method - returns the current color value.
      *
      * @return color
      */
@@ -97,16 +96,16 @@ public class Vehicle {
     }
 
     /**
-     * setColor() method - changes the color value
+     * SetColor() method - changes the color value.
      *
      * @param colorInput - input from Main to replace color
      */
     public void setColor(String colorInput) {
-         this.color = colorInput;
+        this.color = colorInput;
     }
 
     /**
-     * getDoorCount() method - returns the current doorCount value
+     * GetDoorCount() method - returns the current doorCount value.
      *
      * @return doorCount
      */
@@ -115,7 +114,7 @@ public class Vehicle {
     }
 
     /**
-     * getMaxSpeed() method - returns the current maxSpeed value
+     * GetMaxSpeed() method - returns the current maxSpeed value.
      *
      * @return maxSpeed
      */
@@ -124,7 +123,7 @@ public class Vehicle {
     }
 
     /**
-     * getSpeed() method - returns the current speed value
+     * GetSpeed() method - returns the current speed value.
      *
      * @return speed
      */
@@ -133,10 +132,10 @@ public class Vehicle {
     }
 
     /**
-     * accelerate() method - increases the speed of the vehicle
+     * Accelerate() method - increases the speed of the vehicle.
      *
-     * @param accelPower
-     * @param accelTime
+     * @param accelPower - power of the acceleration
+     * @param accelTime - time to accelerate for
      */
     public void accelerate(int accelPower, int accelTime) {
         this.speed += accelPower * accelTime;
@@ -146,10 +145,10 @@ public class Vehicle {
     }
 
     /**
-     * breaking() method - decreases the speed of the vehicle
+     * Breaking() method - decreases the speed of the vehicle.
      *
-     * @param breakPower
-     * @param breakTime
+     * @param breakPower - power of the break
+     * @param breakTime - time to break for
      */
     public void breaking(int breakPower, int breakTime) {
         this.speed -= breakPower * breakTime;
